@@ -234,7 +234,7 @@ function encodeToRot13(str) {
   const alphabet = ' ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!?';
   const scriptAlphabet = ' NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm!?';
   let newStr = '';
-  for (let i = 0; i < str.length; i++) {
+  for (let i = 0; i < str.length; i += 1) {
     const letter = str[i];
     const letterIndex = alphabet.indexOf(letter);
     newStr += scriptAlphabet[letterIndex];
